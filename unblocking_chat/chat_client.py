@@ -18,7 +18,7 @@ def receiving(name, sock):
         finally:
             t_lock.release()
 
-host_ip = '127.0.0.1'
+host_ip = socket.gethostbyname('0.0.0.0')
 port = 0
 server = ('192.168.1.5', 7777)
 
