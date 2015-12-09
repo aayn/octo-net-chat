@@ -2,7 +2,7 @@ import socket
 
 
 def main():
-    host = '127.0.0.1'
+    host = '192.168.1.5'
     port = 7777
 
     sock = socket.socket()

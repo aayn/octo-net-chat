@@ -2,12 +2,12 @@ import socket
 
 
 def main():
-    host = '127.0.0.1'
+    host_name = socket.gethostbyname('0.0.0.0')
     port = 7777
     sock = socket.socket()
-    sock.bind((host, port))
+    sock.bind((host_name, port))
 
-    sock.listen(1)
+    sock.listen(2)
     conn, addr = sock.accept()
     print("Connectiion accepted from ", str(addr))
 
